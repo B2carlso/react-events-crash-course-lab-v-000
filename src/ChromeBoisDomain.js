@@ -16,14 +16,16 @@ export default class ChromeBoisDomain extends Component {
      }
    }
 
-  render() {
-    return (
-      <canvas
-        onMouseMove={this.handleMouseMove}
-        width='900'
-        height='600'
-        tabIndex="0">
-      </canvas>
-    )
-  }
-}
+   render() {
+     return (
+       <canvas
+         onClick={() => {toggleCycling()}}
+         onMouseMove={this.handleMouseMove}
+         onKeyPress={this.handleKeyDown}
+         width='900'
+         height='600'
+         tabIndex="0">
+       </canvas>
+     )
+   }
+ }
